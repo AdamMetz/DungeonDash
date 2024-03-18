@@ -62,3 +62,7 @@
 
 # VS Config
 /src/DungeonDash/.vsconfig
+
+# ELV
+src/DungeonDash/Assets/ElvGames.meta
+src/DungeonDash/Assets/ElvGames/

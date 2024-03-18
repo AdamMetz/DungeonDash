@@ -12,3 +12,7 @@ The player can choose from three different classes for their adventure: [Read mo
 ## Documents
 - [Project Idea](/Documents/README.md)
 - [Concept and Storyboard](/Documents/Dungeon%20Dash%20-%20Concept%20and%20Storyboard.pdf)
+
+## Assets
+
+Credit to [ELV Games - Rogue Adventure World Asset Pack](https://elvgames.itch.io/rogue-adventure-world) for the assets used in this game.
