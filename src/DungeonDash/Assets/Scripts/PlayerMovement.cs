@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 playerDirection;
     private Rigidbody2D rb;
     private Animator animator;
+    private SpriteRenderer sprite;
 
     public int speed = 3;
 
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
     private void OnMovement(InputValue inputValue) { 
         playerDirection = inputValue.Get<Vector2>();
@@ -23,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isMoving", false); 
         } else { 
             animator.SetBool("isMoving", true); 
+        }
+
+        if (playerDirection.x < 0) {
+            sprite.flipX = true;
+        } else if (playerDirection.x > 0) { 
+            sprite.flipX = false;
         }
     }
 
