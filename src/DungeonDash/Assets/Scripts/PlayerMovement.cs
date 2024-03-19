@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerMovement : MonoBehaviour
 {
     private Vector2 playerDirection;
@@ -18,25 +19,33 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
     }
-    private void OnMovement(InputValue inputValue) { 
+
+    private void OnMovement(InputValue inputValue)
+    {
         playerDirection = inputValue.Get<Vector2>();
 
-        if (playerDirection == Vector2.zero) { 
-            animator.SetBool("isMoving", false); 
-        } else { 
-            animator.SetBool("isMoving", true); 
-        }
-
-        if (playerDirection.x < 0) {
-            sprite.flipX = true;
-        } else if (playerDirection.x > 0) { 
-            sprite.flipX = false;
-        }
+        UpdatePlayerMovementAnimation();
+        UpdatePlayerSpriteDirection();
     }
 
     private void FixedUpdate()
     {
-        //rb.AddForce(playerDirection * speed);
         rb.MovePosition(rb.position + playerDirection * Time.fixedDeltaTime * speed);
+    }
+
+    private void UpdatePlayerMovementAnimation() {
+        bool isMoving = playerDirection != Vector2.zero;
+        animator.SetBool("isMoving", isMoving);
+    }
+    private void UpdatePlayerSpriteDirection()
+    {
+        if (playerDirection.x < 0)
+        {
+            sprite.flipX = true;
+        }
+        else if (playerDirection.x > 0)
+        {
+            sprite.flipX = false;
+        }
     }
 }
