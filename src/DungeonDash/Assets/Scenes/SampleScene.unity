@@ -9394,6 +9394,7 @@ GameObject:
   - component: {fileID: 2035179901}
   - component: {fileID: 2035179902}
   - component: {fileID: 2035179903}
+  - component: {fileID: 2035179904}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -9480,9 +9481,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbbf60d9d1d1a241bc194951c7c625e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 5
   radius: 0.45
   yOffset: 0.4
+  arrowPrefab: {fileID: 4585105574326176547, guid: 095a3a7777b99ba468f295aec6d8e3c5, type: 3}
+--- !u!114 &2035179904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035179900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 38f89a41bea86154ab00d9651021035d, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: InGame
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
