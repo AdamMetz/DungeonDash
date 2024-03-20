@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,22 +9,40 @@ public class Weapon : MonoBehaviour
     public float yOffset = 0.4f; // Offset the center of rotation down
     public GameObject arrowPrefab;
 
+    private bool canAttack = true;
+    private float attackCooldown = 1f;
+
     void Update()
     {
         RotateAroundPlayer();
     }
 
+    IEnumerator AttackCooldown()
+    {
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
+
     private void OnFire(InputValue inputValue)
     {
-        // Fire from the bottom right of the sprite (Bottom right of the bow)
-        Vector3 offset = transform.rotation * 
-            new Vector3(
-                transform.localScale.x / 2f, // Move halfway to the right
-                -transform.localScale.y / 2f, // Move halfway down
-                0f
-            );
+        print(inputValue.ToString());
+        if (canAttack)
+        {
+            // Fire from the bottom right of the sprite (Bottom right of the bow)
+            Vector3 offset = transform.rotation *
+                new Vector3(
+                    transform.localScale.x / 2f, // Move halfway to the right
+                    -transform.localScale.y / 2f, // Move halfway down
+                    0f
+                );
 
-        Instantiate(arrowPrefab, transform.position + offset, transform.rotation * Quaternion.Euler(0f, 0f, 180f));
+            Instantiate(arrowPrefab, transform.position + offset, transform.rotation * Quaternion.Euler(0f, 0f, 180f));
+
+            canAttack = false;
+
+            // Start fire cooldown
+            StartCoroutine(AttackCooldown());
+        }
     }
 
     void RotateAroundPlayer()

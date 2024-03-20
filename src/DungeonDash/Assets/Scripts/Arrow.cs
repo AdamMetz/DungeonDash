@@ -22,4 +22,10 @@ public class Arrow : MonoBehaviour
         // Set the velocity in the direction the arrow is rotated
         rb.velocity = shootDirection * speed;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+    }
+
 }
