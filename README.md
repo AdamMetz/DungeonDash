@@ -10,8 +10,11 @@ The player can choose from three different classes for their adventure: [Read mo
 - [David Kim](https://github.com/dav1dk1m): Project team member / Game Designer
 
 ## Documents
+- [Team Meeting Notes](/Documents/MeetingNotes.md)
 - [Project Idea](/Documents/README.md)
 - [Concept and Storyboard](/Documents/Dungeon%20Dash%20-%20Concept%20and%20Storyboard.pdf)
+- [Production and Post-Production](/Documents/Dungeon%20Dash%20-%20Production%20and%20Post-Production.pdf)
+
 
 ## Assets
 
