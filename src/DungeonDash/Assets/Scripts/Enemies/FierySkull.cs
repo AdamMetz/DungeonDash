@@ -50,4 +50,14 @@ public class FierySkull : MonoBehaviour
         Vector2 randomDirection = Random.insideUnitCircle.normalized;
         movementDirection = new Vector3(randomDirection.x, randomDirection.y, 0);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Bounce off the wall if ran into
+        if (collision.gameObject.name == "WallsTilemap")
+        {
+            Vector2 normalVector = collision.contacts[0].normal;
+            movementDirection = Vector2.Reflect(movementDirection, normalVector);
+        }
+    }
 }
