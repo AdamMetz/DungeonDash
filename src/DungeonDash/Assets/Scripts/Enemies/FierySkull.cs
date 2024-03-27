@@ -73,15 +73,15 @@ public class FierySkull : MonoBehaviour
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
 
         GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-        projectile.GetComponent<Arrow>().parent = "FierySkull";
+        projectile.GetComponent<Projectile>().parent = "FierySkull";
 
         // Rotate projectile to face player
         Vector3 projectileDirection = player.position - projectile.transform.position;
-        float angle = Mathf.Atan2(projectileDirection.y, projectileDirection.x) * Mathf.Rad2Deg + 225f;
+        float angle = Mathf.Atan2(projectileDirection.y, projectileDirection.x) * Mathf.Rad2Deg;
         projectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // Shoot towards the player
-        projectile.GetComponent<Rigidbody2D>().velocity = directionToPlayer * projectile.GetComponent<Arrow>().speed;
+        projectile.GetComponent<Rigidbody2D>().velocity = directionToPlayer * projectile.GetComponent<Projectile>().speed;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
