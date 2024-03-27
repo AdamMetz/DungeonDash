@@ -4,6 +4,7 @@ public class Arrow : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
+    public string parent;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,10 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (!collision.name.Contains(parent))
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

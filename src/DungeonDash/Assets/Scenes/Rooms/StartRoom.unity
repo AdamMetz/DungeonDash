@@ -9137,6 +9137,7 @@ GameObject:
   - component: {fileID: 1462249634}
   - component: {fileID: 1462249633}
   - component: {fileID: 1462249637}
+  - component: {fileID: 1462249638}
   m_Layer: 0
   m_Name: FierySkullEnemy
   m_TagString: Untagged
@@ -9267,7 +9268,7 @@ Transform:
   m_GameObject: {fileID: 1462249632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.524, y: -0.65921396, z: 0.067778915}
+  m_LocalPosition: {x: 3.55, y: -0.65921396, z: 0.067778915}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9294,6 +9295,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1462249638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462249632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66ec776d04592e42b926580b3a5d1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4585105574326176547, guid: 095a3a7777b99ba468f295aec6d8e3c5, type: 3}
+  player: {fileID: 1915415322}
+  movementSpeed: 3
+  movementDuration: 2
+  stopDuration: 1
 --- !u!1 &1826313379
 GameObject:
   m_ObjectHideFlags: 0
