@@ -37,7 +37,7 @@ public class Weapon : MonoBehaviour
                 );
 
             GameObject projectile = Instantiate(arrowPrefab, transform.position + offset, transform.rotation * Quaternion.Euler(0f, 0f, 180f));
-            projectile.GetComponent<Arrow>().parent = "Player";
+            projectile.GetComponent<Projectile>().parent = "Player";
 
             canAttack = false;
 

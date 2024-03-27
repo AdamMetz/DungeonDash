@@ -179,3 +179,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 0}
+  parent: 
+  rotationOffset: 135
