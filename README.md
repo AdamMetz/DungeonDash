@@ -19,4 +19,7 @@ The player can choose from three different classes for their adventure: [Read mo
 ## Assets
 
 Credit to [ELV Games - Rogue Adventure World Asset Pack](https://elvgames.itch.io/rogue-adventure-world) for the majority of assets used in this game. (These are paid assets, and are not included in source control!)
+
 Credit to [Kyrise's RPG Icon Pack](https://kyrise.itch.io/kyrises-free-16x16-rpg-icon-pack) for the arrow assets used.
+
+Credit to [Pixel Art Effect - FX017 - Nyknck](https://nyknck.itch.io/pixelarteffectfx017) for fireball assets:
