@@ -9308,10 +9308,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4585105574326176547, guid: 095a3a7777b99ba468f295aec6d8e3c5, type: 3}
-  player: {fileID: 1915415322}
   movementSpeed: 3
-  movementDuration: 2
+  movementDuration: 3
   stopDuration: 1
+  player: {fileID: 0}
 --- !u!1 &1826313379
 GameObject:
   m_ObjectHideFlags: 0
@@ -9463,7 +9463,7 @@ GameObject:
   - component: {fileID: 1915415325}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
