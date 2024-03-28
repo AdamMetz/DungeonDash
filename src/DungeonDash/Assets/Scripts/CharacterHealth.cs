@@ -13,10 +13,17 @@ public class CharacterHealth : MonoBehaviour
     {
         currentHealth -= damageAmount;
         print(gameObject.name + " Current Health: " + currentHealth);
-        if (currentHealth <= 0 ) 
+        if (currentHealth <= 0)
         {
             CharacterDead();
         }
+        else if (gameObject.name != "Player") UpdateHealthBar();
+    }
+
+    private void UpdateHealthBar()
+    {
+        EnemyHealthBar enemyHealthBar = transform.Find("HealthBar")?.GetComponent<EnemyHealthBar>();
+        enemyHealthBar.UpdateHealthBar((float) currentHealth / maxHealth);
     }
 
     private void CharacterDead() 
