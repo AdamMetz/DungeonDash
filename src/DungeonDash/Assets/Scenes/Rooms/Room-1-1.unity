@@ -9137,7 +9137,7 @@ GameObject:
   - component: {fileID: 1462249634}
   - component: {fileID: 1462249633}
   - component: {fileID: 1462249637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FierySkullEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
