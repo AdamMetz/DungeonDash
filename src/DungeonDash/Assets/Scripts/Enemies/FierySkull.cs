@@ -3,7 +3,7 @@ using UnityEngine;
 public class FierySkull : MonoBehaviour
 {
     public GameObject projectilePrefab;
-    private Transform player;
+    protected Transform player;
 
     public float movementSpeed = 1.5f;
 
@@ -68,7 +68,7 @@ public class FierySkull : MonoBehaviour
         movementDirection = new Vector3(randomDirection.x, randomDirection.y, 0);
     }
 
-    void Fire()
+    public virtual void Fire()
     {
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
 
