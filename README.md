@@ -22,4 +22,8 @@ Credit to [ELV Games - Rogue Adventure World Asset Pack](https://elvgames.itch.i
 
 Credit to [Kyrise's RPG Icon Pack](https://kyrise.itch.io/kyrises-free-16x16-rpg-icon-pack) for the arrow assets used.
 
-Credit to [Pixel Art Effect - FX017 - Nyknck](https://nyknck.itch.io/pixelarteffectfx017) for fireball assets:
+Credit to [Pixel Art Effect - FX017 - Nyknck](https://nyknck.itch.io/pixelarteffectfx017) for fireball assets.
+
+Credit to [Dungeon Music - Deep Crawler](https://crossedkiller.itch.io/dungeon-music) for background music assets.
+
+Credit to [Start Scene Background](https://www.artstation.com/artwork/QrYv8E) for start screen background image.
