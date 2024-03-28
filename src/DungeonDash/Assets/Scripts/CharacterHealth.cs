@@ -12,6 +12,7 @@ public class CharacterHealth : MonoBehaviour
     public void TakeDamage(int damageAmount) 
     {
         currentHealth -= damageAmount;
+        print(gameObject.name + " Current Health: " + currentHealth);
         if (currentHealth <= 0 ) 
         {
             CharacterDead();

@@ -9141,7 +9141,7 @@ GameObject:
   - component: {fileID: 1462249639}
   m_Layer: 6
   m_Name: FierySkullEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9324,7 +9324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28f6ca252ade3947bf7a6bf6b79ad05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 30
   currentHealth: 0
 --- !u!1 &1826313379
 GameObject:

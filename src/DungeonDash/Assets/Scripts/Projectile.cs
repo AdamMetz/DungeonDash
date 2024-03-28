@@ -3,6 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed = 20f;
+    public int damage = 10;
     public Rigidbody2D rb;
     public string parent;
     public float rotationOffset = 0f; // Some assets are angled by defualt, so its sometimes necessary to add a rotation offset
@@ -29,6 +30,11 @@ public class Projectile : MonoBehaviour
     {
         if (!collision.name.Contains(parent))
         {
+            if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")) 
+            {
+                CharacterHealth characterHealth = collision.gameObject.GetComponent<CharacterHealth>();
+                characterHealth.TakeDamage(damage);
+            }
             Destroy(gameObject);
         }
     }

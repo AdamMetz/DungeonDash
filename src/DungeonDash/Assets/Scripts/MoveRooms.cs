@@ -22,7 +22,6 @@ public class MoveRooms : MonoBehaviour
     private bool CheckForEnemies() 
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 500f, enemiesLayer);
-        print(colliders.Length);
         return colliders.Length > 0;
     }
 }
