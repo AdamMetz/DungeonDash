@@ -1195,7 +1195,7 @@ GameObject:
   m_Layer: 0
   m_Name: PlayerSpawnPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1208,7 +1208,7 @@ Transform:
   m_GameObject: {fileID: 564062199}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -6.17, z: 1560.424}
+  m_LocalPosition: {x: 0.01, y: -5.98, z: 1560.424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9046,7 +9046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9025607793922377684, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.82
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 9025607793922377684, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
       propertyPath: m_LocalPosition.z
