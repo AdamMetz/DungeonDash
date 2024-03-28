@@ -9138,6 +9138,7 @@ GameObject:
   - component: {fileID: 1462249633}
   - component: {fileID: 1462249637}
   - component: {fileID: 1462249638}
+  - component: {fileID: 1462249639}
   m_Layer: 6
   m_Name: FierySkullEnemy
   m_TagString: Untagged
@@ -9311,6 +9312,20 @@ MonoBehaviour:
   movementSpeed: 3
   movementDuration: 3
   stopDuration: 1
+--- !u!114 &1462249639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462249632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28f6ca252ade3947bf7a6bf6b79ad05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  currentHealth: 0
 --- !u!1 &1826313379
 GameObject:
   m_ObjectHideFlags: 0
@@ -9460,6 +9475,7 @@ GameObject:
   - component: {fileID: 1915415327}
   - component: {fileID: 1915415326}
   - component: {fileID: 1915415325}
+  - component: {fileID: 1915415328}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -9661,6 +9677,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.009570241, y: -0.2775322}
   m_Size: {x: 0.4832166, y: 0.4832166}
   m_Direction: 0
+--- !u!114 &1915415328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915415319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28f6ca252ade3947bf7a6bf6b79ad05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &2035179900
 GameObject:
   m_ObjectHideFlags: 0

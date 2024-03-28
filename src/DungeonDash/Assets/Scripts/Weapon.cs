@@ -25,7 +25,6 @@ public class Weapon : MonoBehaviour
 
     private void OnFire(InputValue inputValue)
     {
-        print(inputValue.ToString());
         if (canAttack)
         {
             // Fire from the bottom right of the sprite (Bottom right of the bow)
