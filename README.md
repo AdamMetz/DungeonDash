@@ -27,3 +27,5 @@ Credit to [Pixel Art Effect - FX017 - Nyknck](https://nyknck.itch.io/pixelarteff
 Credit to [Dungeon Music - Deep Crawler](https://crossedkiller.itch.io/dungeon-music) for background music assets.
 
 Credit to [Start Scene Background](https://www.artstation.com/artwork/QrYv8E) for start screen background image.
+
+Credit to [Hearts and health bar](https://fliflifly.itch.io/hearts-and-health-bar) for heart images.
