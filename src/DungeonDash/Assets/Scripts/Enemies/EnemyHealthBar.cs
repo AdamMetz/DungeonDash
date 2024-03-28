@@ -12,7 +12,6 @@ public class EnemyHealthBar : MonoBehaviour
     public void UpdateHealthBar(float healthPercentage)
     {
         float newHealthBarWidth = initialHealthBarWidth * healthPercentage;
-        print(healthPercentage);
         transform.localScale = new Vector3(newHealthBarWidth, transform.localScale.y, transform.localScale.z);
     }
 }

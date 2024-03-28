@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CharacterHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth;
     public int currentHealth;
 
     void Start()
@@ -11,23 +11,38 @@ public class CharacterHealth : MonoBehaviour
     }
     public void TakeDamage(int damageAmount) 
     {
+        if (gameObject.name == "Player") 
+        { 
+            damageAmount = 1;
+        }
+
         currentHealth -= damageAmount;
-        print(gameObject.name + " Current Health: " + currentHealth);
+        UpdateHealthBar();
+
         if (currentHealth <= 0)
         {
             CharacterDead();
         }
-        else if (gameObject.name != "Player") UpdateHealthBar();
     }
 
     private void UpdateHealthBar()
     {
-        EnemyHealthBar enemyHealthBar = transform.Find("HealthBar")?.GetComponent<EnemyHealthBar>();
-        enemyHealthBar.UpdateHealthBar((float) currentHealth / maxHealth);
+        if (gameObject.name != "Player") 
+        {
+            EnemyHealthBar enemyHealthBar = transform.Find("HealthBar")?.GetComponent<EnemyHealthBar>();
+            enemyHealthBar.UpdateHealthBar((float)currentHealth / maxHealth);
+        } else
+        {
+            PlayerHealthBar playerHealthBar = transform.Find("Canvas").Find("Hearts").GetComponent<PlayerHealthBar>();
+            playerHealthBar.UpdateHealthBar(currentHealth);
+        }
     }
 
     private void CharacterDead() 
     {
-        Destroy(gameObject);
+        if (gameObject.name != "Player") // TEMPORARY: Until we handle player death
+        {
+            Destroy(gameObject);
+        }
     }
 }
