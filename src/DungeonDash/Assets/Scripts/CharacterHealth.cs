@@ -25,6 +25,17 @@ public class CharacterHealth : MonoBehaviour
         }
     }
 
+    // Heal the player if possible and return true, otherwise return false if the player is already max hp
+    public bool Heal(int healAmount) 
+    {
+        if (currentHealth + healAmount <= maxHealth) { 
+            currentHealth += healAmount;
+            UpdateHealthBar();
+            return true;
+        }
+        return false;
+    }
+
     private void UpdateHealthBar()
     {
         if (gameObject.name != "Player") 
