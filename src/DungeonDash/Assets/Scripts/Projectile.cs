@@ -15,8 +15,6 @@ public class Projectile : MonoBehaviour
 
         // Get the rotation of the projectile in Euler angles
         float angle = transform.eulerAngles.z + rotationOffset;
-
-        // Convert the angle to radians
         float angleRadians = angle * Mathf.Deg2Rad;
 
         // Calculate the direction based on the angle
@@ -33,7 +31,7 @@ public class Projectile : MonoBehaviour
             if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")) 
             {
                 CharacterHealth characterHealth = collision.gameObject.GetComponent<CharacterHealth>();
-                characterHealth.TakeDamage(damage);
+                characterHealth.TakeDamage(damage, parent);
             }
             Destroy(gameObject);
         }

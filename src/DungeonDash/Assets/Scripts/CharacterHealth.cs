@@ -9,19 +9,26 @@ public class CharacterHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    public void TakeDamage(int damageAmount) 
+    public void TakeDamage(int damageAmount, string projectileSourceName)
     {
-        if (gameObject.name == "Player") 
-        { 
-            damageAmount = 1;
-        }
-
-        currentHealth -= damageAmount;
-        UpdateHealthBar();
-
-        if (currentHealth <= 0)
+        // Only deal damage when the player is either being hit or hitting someone
+        // This prevents friendly fire between enemies
+        if (projectileSourceName == "Player" || gameObject.name == "Player")
         {
-            CharacterDead();
+            print(projectileSourceName);
+            print(gameObject.name);
+            if (gameObject.name == "Player")
+            {
+                damageAmount = 1;
+            }
+
+            currentHealth -= damageAmount;
+            UpdateHealthBar();
+
+            if (currentHealth <= 0)
+            {
+                CharacterDead();
+            }
         }
     }
 

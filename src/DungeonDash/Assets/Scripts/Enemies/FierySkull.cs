@@ -73,7 +73,7 @@ public class FierySkull : MonoBehaviour
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
 
         GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-        projectile.GetComponent<Projectile>().parent = "FierySkull";
+        projectile.GetComponent<Projectile>().parent = gameObject.name;
 
         // Rotate projectile to face player
         Vector3 projectileDirection = player.position - projectile.transform.position;

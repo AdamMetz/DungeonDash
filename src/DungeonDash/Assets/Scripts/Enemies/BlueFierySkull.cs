@@ -15,7 +15,7 @@ public class BlueFierySkull : FierySkull
     private void ShootProjectile(Vector3 direction)
     {
         GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-        projectile.GetComponent<Projectile>().parent = "BlueFierySkull";
+        projectile.GetComponent<Projectile>().parent = gameObject.name;
 
         // Rotate projectile to face player
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
