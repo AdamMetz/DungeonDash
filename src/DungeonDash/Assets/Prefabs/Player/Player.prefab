@@ -358,6 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  immunityDuration: 1
 --- !u!114 &7490728701782215986
 MonoBehaviour:
   m_ObjectHideFlags: 0

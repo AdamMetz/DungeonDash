@@ -5,12 +5,32 @@ public class CharacterHealth : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    private bool isImmune = false;
+    public float immunityDuration = 0f;
+    private float immunityTimer = 0f;
+
     void Start()
     {
         currentHealth = maxHealth;
     }
+
+    void Update()
+    {
+        // Update immunity timer
+        if (isImmune)
+        {
+            immunityTimer -= Time.deltaTime;
+            if (immunityTimer <= 0)
+            {
+                isImmune = false;
+            }
+        }
+    }
+
     public void TakeDamage(int damageAmount, string projectileSourceName)
     {
+        if (isImmune) return;
+
         // Only deal damage when the player is either being hit or hitting someone
         // This prevents friendly fire between enemies
         if (projectileSourceName == "Player" || gameObject.name == "Player")
@@ -26,6 +46,11 @@ public class CharacterHealth : MonoBehaviour
             if (currentHealth <= 0)
             {
                 CharacterDead();
+            }
+            else
+            {
+                isImmune = true;
+                immunityTimer = immunityDuration;
             }
         }
     }
