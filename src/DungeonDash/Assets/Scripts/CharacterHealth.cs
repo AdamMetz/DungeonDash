@@ -15,8 +15,6 @@ public class CharacterHealth : MonoBehaviour
         // This prevents friendly fire between enemies
         if (projectileSourceName == "Player" || gameObject.name == "Player")
         {
-            print(projectileSourceName);
-            print(gameObject.name);
             if (gameObject.name == "Player")
             {
                 damageAmount = 1;
