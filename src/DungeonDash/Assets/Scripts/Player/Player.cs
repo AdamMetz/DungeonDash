@@ -39,4 +39,9 @@ public class Player : MonoBehaviour
             Debug.LogError("PlayerSpawnPoint not found in the scene.");
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print(collision.gameObject.name);
+    }
 }
