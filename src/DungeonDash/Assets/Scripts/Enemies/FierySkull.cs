@@ -4,6 +4,7 @@ public class FierySkull : MonoBehaviour
 {
     public GameObject projectilePrefab;
     protected Transform player;
+    private CapsuleCollider2D capsuleCollider;
 
     public float movementSpeed = 1.5f;
 
@@ -21,6 +22,7 @@ public class FierySkull : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
         UpdateMovementDirection();
     }
 
@@ -53,6 +55,23 @@ public class FierySkull : MonoBehaviour
                 isMoving = true;
                 movementTimer = 0f;
                 UpdateMovementDirection();
+            }
+        }
+        CheckForPlayerCollision();
+    }
+
+    private void CheckForPlayerCollision()
+    {
+        Collider2D[] overlappingColliders = new Collider2D[5];
+        int numOverlaps = capsuleCollider.OverlapCollider(new ContactFilter2D(), overlappingColliders);
+
+        for (int i = 0; i < numOverlaps; i++)
+        {
+            Collider2D collider = overlappingColliders[i];
+            if (collider.CompareTag("Player"))
+            {
+                CharacterHealth playerHealth = collider.gameObject.GetComponent<CharacterHealth>();
+                playerHealth.TakeDamage(1, gameObject.name);
             }
         }
     }
