@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,7 @@ public class MoveRooms : MonoBehaviour
 {
     public int roomSceneIndex;
     private LayerMask enemiesLayer;
+    public Animator moveRoomsAnimator;
 
     void Start()
     {
@@ -15,8 +17,17 @@ public class MoveRooms : MonoBehaviour
     {
         if (collision.name == "Player" && !CheckForEnemies())
         {
-            SceneManager.LoadScene(roomSceneIndex, LoadSceneMode.Single);
+            moveRoomsAnimator = GameObject.Find("RoomTransition").GetComponent<Animator>();
+            StartCoroutine(EnterNewRoom());
         }
+    }
+
+    public IEnumerator EnterNewRoom() 
+    {
+        moveRoomsAnimator.SetTrigger("LeavingRoom");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync(roomSceneIndex, LoadSceneMode.Single);
+        moveRoomsAnimator.SetTrigger("EnteringRoom");
     }
 
     private bool CheckForEnemies() 
