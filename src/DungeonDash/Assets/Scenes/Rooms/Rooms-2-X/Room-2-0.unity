@@ -1291,7 +1291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90aec00943c92ca4d960d7512bd605fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomSceneIndex: 3
+  roomSceneIndex: 7
   moveRoomsAnimator: {fileID: 743006459}
 --- !u!61 &743006461
 BoxCollider2D:
@@ -9116,7 +9116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90aec00943c92ca4d960d7512bd605fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomSceneIndex: 3
+  roomSceneIndex: 8
   moveRoomsAnimator: {fileID: 1096856029}
 --- !u!61 &1096856031
 BoxCollider2D:
@@ -9287,7 +9287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90aec00943c92ca4d960d7512bd605fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomSceneIndex: 3
+  roomSceneIndex: 9
   moveRoomsAnimator: {fileID: 1384741654}
 --- !u!61 &1384741656
 BoxCollider2D:

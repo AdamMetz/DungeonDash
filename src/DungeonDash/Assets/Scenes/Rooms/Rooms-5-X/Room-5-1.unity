@@ -9171,7 +9171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90aec00943c92ca4d960d7512bd605fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomSceneIndex: 2
+  roomSceneIndex: 16
+  moveRoomsAnimator: {fileID: 0}
 --- !u!61 &1576860890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9204,7 +9205,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.12096417, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9215,7 +9216,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.6612127, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1576860891
 Transform:
