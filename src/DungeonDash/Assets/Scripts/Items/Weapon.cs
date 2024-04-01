@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,6 +10,7 @@ public class Weapon : MonoBehaviour
 
     private bool canAttack = true;
     private float attackCooldown = 1f;
+    private int weaponDamage = 10;
 
     void Update()
     {
@@ -37,6 +37,7 @@ public class Weapon : MonoBehaviour
 
             GameObject projectile = Instantiate(arrowPrefab, transform.position + offset, transform.rotation * Quaternion.Euler(0f, 0f, 180f));
             projectile.GetComponent<Projectile>().parent = "Player";
+            projectile.GetComponent<Projectile>().damage = weaponDamage;
 
             canAttack = false;
 
@@ -68,5 +69,11 @@ public class Weapon : MonoBehaviour
             // Apply a flat 45 degree rotation to the bow itself, since the icon sprites are angled 45 degrees.
             transform.localRotation *= Quaternion.Euler(0f, 0, 45f);
         }
+    }
+
+    public void EquipNewWeapon(int newWeaponDamage, Sprite newWeaponSprite) 
+    { 
+        weaponDamage = newWeaponDamage;
+        GetComponent<SpriteRenderer>().sprite = newWeaponSprite;
     }
 }
