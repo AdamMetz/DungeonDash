@@ -33,3 +33,9 @@
 - Meeting with the course instructor to discuss project progress and ask questions.
   - Shared the current progress of the game development project
   - Demonstrated the game that we have developed so far
+
+## 03/27/2024
+- In-person meeting after the class,
+  - Discussed on the current progress of the game development (Room transitions and different classes spawning)
+  - Changed the design of the dungeon room layout
+  - Started preparing the final presentation
