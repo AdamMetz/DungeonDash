@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterHealth : MonoBehaviour
 {
@@ -81,11 +83,22 @@ public class CharacterHealth : MonoBehaviour
 
     private void CharacterDead() 
     {
-        if (gameObject.name != "Player") // TEMPORARY: Until we handle player death
+        if (gameObject.name != "Player")
         {
             DropItem item = gameObject.GetComponent<DropItem>();
             if (item != null) item.DropItemOnGround();
             Destroy(gameObject);
+        } else if (gameObject.name == "Player")
+        {
+            StartCoroutine(HandlePlayerGameOver());
         }
+    }
+
+    public IEnumerator HandlePlayerGameOver()
+    {
+        Animator playerAnimator = GetComponent<Animator>();
+        playerAnimator.SetTrigger("GameOver");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
     }
 }
