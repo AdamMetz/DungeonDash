@@ -83,6 +83,8 @@ public class CharacterHealth : MonoBehaviour
     {
         if (gameObject.name != "Player") // TEMPORARY: Until we handle player death
         {
+            DropItem item = gameObject.GetComponent<DropItem>();
+            if (item != null) item.DropItemOnGround();
             Destroy(gameObject);
         }
     }

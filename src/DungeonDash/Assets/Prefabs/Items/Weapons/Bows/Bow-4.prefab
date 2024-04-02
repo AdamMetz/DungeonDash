@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 588803211442024954}
   - component: {fileID: 839963449794361643}
   - component: {fileID: 9222217058555480105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bow-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_Sprite: {fileID: 123914270, guid: 985d42a2b6a3bf14f9c443829443c88a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
