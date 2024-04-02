@@ -98,6 +98,14 @@ public class CharacterHealth : MonoBehaviour
     {
         Animator playerAnimator = GetComponent<Animator>();
         playerAnimator.SetTrigger("GameOver");
+
+        PlayerMovement playerMovement = GetComponent<PlayerMovement>();
+        if (playerMovement != null)
+            playerMovement.enabled = false;
+
+        GameObject playerWeapon = GameObject.Find("Weapon");
+        Destroy(playerWeapon);
+
         yield return new WaitForSeconds(1);
         SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
         Destroy(gameObject);
