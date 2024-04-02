@@ -2062,6 +2062,7 @@ GameObject:
   - component: {fileID: 814751592}
   - component: {fileID: 814751593}
   - component: {fileID: 814751594}
+  - component: {fileID: 814751595}
   m_Layer: 6
   m_Name: Boss
   m_TagString: Enemy
@@ -2222,7 +2223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6961675157554705391, guid: d843a094d4a182844a256299791c345a, type: 3}
-  stopDuration: 2
+  fireInterval: 1
 --- !u!114 &814751594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,6 +2239,27 @@ MonoBehaviour:
   maxHealth: 250
   currentHealth: 0
   immunityDuration: 0
+--- !u!95 &814751595
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814751588}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c48f87d274550b94b8ebaeb4efdc1cd5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &830841540
 PrefabInstance:
   m_ObjectHideFlags: 0
