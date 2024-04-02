@@ -5,26 +5,17 @@ public class Boss : MonoBehaviour
     public GameObject projectilePrefab;
     private BoxCollider2D boxCollider;
 
-    public float fireInterval = 0.75f;
-    private float fireTimer = 0f;
-
-    private float angleOffset = 22.5f;
+    public int numberOfProjectiles = 16;
+    private float angleOffset;
 
     public void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        angleOffset = 360f / numberOfProjectiles;
     }
 
     public void Update()
     {
-        fireTimer += Time.deltaTime;
-
-        if (fireTimer >= fireInterval)
-        {
-            Fire();
-            fireTimer = 0f;
-        }
-
         CheckForPlayerCollision();
     }
 
