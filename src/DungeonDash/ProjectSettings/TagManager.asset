@@ -16,8 +16,8 @@ TagManager:
   - GateTileMap
   - Items
   - Player
-  - 
-  - 
+  - PlayerProjectiles
+  - EnemyProjectiles
   - 
   - 
   - 

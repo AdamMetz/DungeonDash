@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9185006169402226838}
   - component: {fileID: 1686866328477039927}
   - component: {fileID: -3324903537259742496}
-  m_Layer: 3
+  m_Layer: 10
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  damage: 10
   rb: {fileID: 0}
   parent: 
   rotationOffset: 135
