@@ -1381,8 +1381,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7252975388114828989, guid: ce98ba1dd9a5c464f9d40f65868abfb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 431183676}
   m_SourcePrefab: {fileID: 100100000, guid: ce98ba1dd9a5c464f9d40f65868abfb7, type: 3}
+--- !u!1 &431183675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7252975388114828989, guid: ce98ba1dd9a5c464f9d40f65868abfb7, type: 3}
+  m_PrefabInstance: {fileID: 431183674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &431183676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431183675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2961e0b0c05e3d4ab6d158e8786df00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 0}
+  healthPotionPrefab: {fileID: 2756077520835318141, guid: 257690553d0ff7a4ca6a830388db3fac, type: 3}
 --- !u!1 &684164668
 GameObject:
   m_ObjectHideFlags: 0

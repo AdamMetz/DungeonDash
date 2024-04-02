@@ -1363,8 +1363,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7252975388114828989, guid: ce98ba1dd9a5c464f9d40f65868abfb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 336768969}
   m_SourcePrefab: {fileID: 100100000, guid: ce98ba1dd9a5c464f9d40f65868abfb7, type: 3}
+--- !u!1 &336768968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7252975388114828989, guid: ce98ba1dd9a5c464f9d40f65868abfb7, type: 3}
+  m_PrefabInstance: {fileID: 336768967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &336768969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336768968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2961e0b0c05e3d4ab6d158e8786df00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 670943390377605691, guid: d52eee4087bf4374fbf15a5d8362fbf4, type: 3}
+  healthPotionPrefab: {fileID: 0}
 --- !u!1001 &848541964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1424,8 +1446,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2123383084552423550, guid: fd927edf2500230429d7740a5b6e891c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 848541966}
   m_SourcePrefab: {fileID: 100100000, guid: fd927edf2500230429d7740a5b6e891c, type: 3}
+--- !u!1 &848541965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2123383084552423550, guid: fd927edf2500230429d7740a5b6e891c, type: 3}
+  m_PrefabInstance: {fileID: 848541964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &848541966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848541965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2961e0b0c05e3d4ab6d158e8786df00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 0}
+  healthPotionPrefab: {fileID: 2756077520835318141, guid: 257690553d0ff7a4ca6a830388db3fac, type: 3}
 --- !u!1 &1068387595
 GameObject:
   m_ObjectHideFlags: 0
