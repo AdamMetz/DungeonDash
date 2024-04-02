@@ -17,18 +17,12 @@ The player can choose from three different classes for their adventure: [Read mo
 
 
 ## Assets
-
-Credit to [ELV Games - Rogue Adventure World Asset Pack](https://elvgames.itch.io/rogue-adventure-world) for the majority of assets used in this game. (These are paid assets, and are not included in source control!)
-
-Credit to [Kyrise's RPG Icon Pack](https://kyrise.itch.io/kyrises-free-16x16-rpg-icon-pack) for the arrow assets used.
-
-Credit to [Pixel Art Effect - FX017 - Nyknck](https://nyknck.itch.io/pixelarteffectfx017) for fireball assets.
-
-Credit to [Dungeon Music - Deep Crawler](https://crossedkiller.itch.io/dungeon-music) for background music assets.
-
-Credit to [Pursuit (Dramatic Music) - Gaming Background Music](https://www.youtube.com/watch?v=NOc8yz985T4) for game over scene background music assets.
-
-Credit to [Start Scene Background](https://www.artstation.com/artwork/QrYv8E) for start screen background image.
-
-
-Credit to [Hearts and health bar](https://fliflifly.itch.io/hearts-and-health-bar) for heart images.
+Credits to: 
+- [ELV Games - Rogue Adventure World Asset Pack](https://elvgames.itch.io/rogue-adventure-world) for the majority of assets used in this game. (These are paid assets, and are not included in source control!)
+- [Kyrise's RPG Icon Pack](https://kyrise.itch.io/kyrises-free-16x16-rpg-icon-pack) for the arrow assets used.
+- [Pixel Art Effect - FX017 - Nyknck](https://nyknck.itch.io/pixelarteffectfx017) for fireball assets.
+- [Dungeon Music - Deep Crawler](https://crossedkiller.itch.io/dungeon-music) for background music assets.
+- [Pursuit (Dramatic Music) - Gaming Background Music](https://www.youtube.com/watch?v=NOc8yz985T4) for game over scene background music assets.
+- [Start Scene Background](https://www.artstation.com/artwork/QrYv8E) for start screen background image.
+- [ROYALTY FREE Epic Victory Music Royalty](https://www.youtube.com/watch?v=5JeU0pYk0dg) for victory background music assets.
+- [Hearts and health bar](https://fliflifly.itch.io/hearts-and-health-bar) for heart images.
