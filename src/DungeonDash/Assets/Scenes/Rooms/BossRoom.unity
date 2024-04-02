@@ -2223,7 +2223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6961675157554705391, guid: d843a094d4a182844a256299791c345a, type: 3}
-  fireInterval: 1
+  numberOfProjectiles: 16
 --- !u!114 &814751594
 MonoBehaviour:
   m_ObjectHideFlags: 0

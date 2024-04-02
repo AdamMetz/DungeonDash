@@ -83,14 +83,19 @@ public class CharacterHealth : MonoBehaviour
 
     private void CharacterDead() 
     {
-        if (gameObject.tag != "Player")
+        if (gameObject.name == "Boss")
+        {
+            StartCoroutine(HandleBossDefeat());
+        }
+        else if (gameObject.tag == "Player")
+        {
+            StartCoroutine(HandlePlayerGameOver());
+        }
+        else if (gameObject.tag == "Enemy") 
         {
             DropItem item = gameObject.GetComponent<DropItem>();
             if (item != null) item.DropItemOnGround();
             Destroy(gameObject);
-        } else if (gameObject.tag == "Player")
-        {
-            StartCoroutine(HandlePlayerGameOver());
         }
     }
 
@@ -109,5 +114,17 @@ public class CharacterHealth : MonoBehaviour
         yield return new WaitForSeconds(1);
         SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
         Destroy(gameObject);
+    }
+
+    public IEnumerator HandleBossDefeat()
+    {
+        EnemyHealthBar enemyHealthBar = transform.Find("HealthBar").GetComponent<EnemyHealthBar>();
+        Destroy(enemyHealthBar);
+
+        Animator bossAnimator = GetComponent<Animator>();
+        bossAnimator.SetTrigger("BossDefeated");
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+        SceneManager.LoadSceneAsync(17, LoadSceneMode.Single);
     }
 }
