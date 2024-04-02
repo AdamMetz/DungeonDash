@@ -20,10 +20,6 @@ public class Player : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             SpawnPlayer();
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void SpawnPlayer()

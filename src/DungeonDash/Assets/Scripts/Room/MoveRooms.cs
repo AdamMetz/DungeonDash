@@ -15,7 +15,7 @@ public class MoveRooms : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) 
     {
-        if (collision.name == "Player" && !CheckForEnemies())
+        if (collision.tag == "Player" && !CheckForEnemies())
         {
             moveRoomsAnimator = GameObject.Find("RoomTransition").GetComponent<Animator>();
             StartCoroutine(EnterNewRoom());

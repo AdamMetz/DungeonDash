@@ -35,11 +35,11 @@ public class CharacterHealth : MonoBehaviour
 
         // Only deal damage when the player is either being hit or hitting someone
         // This prevents friendly fire between enemies
-        if (projectileSourceName == "Player" || gameObject.name == "Player")
+        if (projectileSourceName == "Player" || gameObject.tag == "Player")
         {
-            if (gameObject.name == "Player")
+            if (gameObject.tag == "Player")
             {
-                damageAmount = 1;
+                damageAmount = 3;
             }
 
             currentHealth -= damageAmount;
@@ -70,7 +70,7 @@ public class CharacterHealth : MonoBehaviour
 
     private void UpdateHealthBar()
     {
-        if (gameObject.name != "Player") 
+        if (gameObject.tag != "Player") 
         {
             EnemyHealthBar enemyHealthBar = transform.Find("HealthBar")?.GetComponent<EnemyHealthBar>();
             enemyHealthBar.UpdateHealthBar((float)currentHealth / maxHealth);
@@ -83,12 +83,12 @@ public class CharacterHealth : MonoBehaviour
 
     private void CharacterDead() 
     {
-        if (gameObject.name != "Player")
+        if (gameObject.tag != "Player")
         {
             DropItem item = gameObject.GetComponent<DropItem>();
             if (item != null) item.DropItemOnGround();
             Destroy(gameObject);
-        } else if (gameObject.name == "Player")
+        } else if (gameObject.tag == "Player")
         {
             StartCoroutine(HandlePlayerGameOver());
         }
@@ -100,5 +100,6 @@ public class CharacterHealth : MonoBehaviour
         playerAnimator.SetTrigger("GameOver");
         yield return new WaitForSeconds(1);
         SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
+        Destroy(gameObject);
     }
 }
