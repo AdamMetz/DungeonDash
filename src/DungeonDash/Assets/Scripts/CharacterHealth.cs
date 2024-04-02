@@ -39,7 +39,7 @@ public class CharacterHealth : MonoBehaviour
         {
             if (gameObject.tag == "Player")
             {
-                damageAmount = 3;
+                damageAmount = 1;
             }
 
             currentHealth -= damageAmount;
