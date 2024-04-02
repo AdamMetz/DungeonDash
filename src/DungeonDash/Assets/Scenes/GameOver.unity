@@ -488,7 +488,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fa20a1c27a6cc49999cca05728410ff6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6836419ee04fe4a5f8dff8ab1edddabb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -818,8 +818,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1578030504}
-  - {fileID: 1660105862}
   - {fileID: 1755451898}
+  - {fileID: 1660105862}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1253,7 +1253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00003624, y: 185}
+  m_AnchoredPosition: {x: 0.00003624, y: 28}
   m_SizeDelta: {x: 190, y: 585.3567}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1755451899
@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 5.5216403, z: 0, w: 0}
+  m_margin: {x: 0, y: 172.15646, z: 0, w: 260.63416}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
