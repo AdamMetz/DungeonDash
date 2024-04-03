@@ -9293,6 +9293,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 558b386f1eb675944a96cad8ea304cfd, type: 2}
+    - target: {fileID: 7257664377845556228, guid: d529ce092e906344cbb2788b644c88f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 229
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257664377845556228, guid: d529ce092e906344cbb2788b644c88f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
+      objectReference: {fileID: 0}
     - target: {fileID: 8978936504770603829, guid: d529ce092e906344cbb2788b644c88f4, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
