@@ -30,8 +30,6 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("HIT");
-        print(collision.name);
         if (!collision.name.Contains(parent))
         {
             if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")) 

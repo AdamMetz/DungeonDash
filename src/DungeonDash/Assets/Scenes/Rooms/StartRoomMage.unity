@@ -9342,6 +9342,18 @@ PrefabInstance:
       propertyPath: weaponRotation
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 3362090225977723226, guid: d529ce092e906344cbb2788b644c88f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.7700002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205340234208670988, guid: d529ce092e906344cbb2788b644c88f4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 558b386f1eb675944a96cad8ea304cfd, type: 2}
+    - target: {fileID: 8978936504770603829, guid: d529ce092e906344cbb2788b644c88f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8466668
+      objectReference: {fileID: 0}
     - target: {fileID: 9025607793922377684, guid: d529ce092e906344cbb2788b644c88f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
