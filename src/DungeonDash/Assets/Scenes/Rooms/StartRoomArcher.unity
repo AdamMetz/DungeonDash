@@ -1384,23 +1384,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &913628844 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1741429065075610111, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
-  m_PrefabInstance: {fileID: 1708142974}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &913628854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913628844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1830446441e50844882c4f8de9fa7218, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1068387595
 GameObject:
   m_ObjectHideFlags: 0
@@ -9172,7 +9155,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084929446}
   m_CullTransparentMesh: 1
---- !u!1001 &1708142974
+--- !u!1001 &1317924735
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9182,7 +9165,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1741429065075610111, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Archer
       objectReference: {fileID: 0}
     - target: {fileID: 3362090225977723226, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9202,11 +9185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9025607793922377684, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.059027195
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9025607793922377684, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.7264175
+      value: -5.55
       objectReference: {fileID: 0}
     - target: {fileID: 9025607793922377684, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9243,10 +9226,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1741429065075610111, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 913628854}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc124b3d3b66ff74d862ba7a6fd59a44, type: 3}
 --- !u!1 &1826313379
 GameObject:
@@ -9371,4 +9351,4 @@ SceneRoots:
   - {fileID: 1964852388}
   - {fileID: 564062200}
   - {fileID: 850781328}
-  - {fileID: 1708142974}
+  - {fileID: 1317924735}
