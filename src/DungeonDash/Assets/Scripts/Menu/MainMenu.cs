@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void MainMenuButton()
     {
-        SceneManager.LoadScene(18);
+        SceneManager.LoadScene(0);
     }
 
     public void AboutPage()

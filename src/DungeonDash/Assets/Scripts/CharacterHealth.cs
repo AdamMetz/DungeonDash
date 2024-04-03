@@ -112,7 +112,7 @@ public class CharacterHealth : MonoBehaviour
         Destroy(playerWeapon);
 
         yield return new WaitForSeconds(1);
-        SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync(18, LoadSceneMode.Single);
         Destroy(gameObject);
     }
 
