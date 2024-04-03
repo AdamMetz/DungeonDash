@@ -180,5 +180,7 @@ MonoBehaviour:
   speed: 20
   damage: 10
   rb: {fileID: 0}
-  parent: 
-  rotationOffset: 135
+  parent: Archer
+  rotationOffsetx: 0
+  rotationOffsety: 0
+  rotationOffsetz: 225

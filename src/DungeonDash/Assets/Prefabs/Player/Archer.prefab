@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 7820427733978002658}
   - component: {fileID: 3735838967491535671}
   m_Layer: 9
-  m_Name: Player
+  m_Name: Archer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -384,7 +384,7 @@ Transform:
   m_GameObject: {fileID: 1803593710614108212}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.059027195, y: 2.9064178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -675,6 +675,8 @@ MonoBehaviour:
   radius: 0.45
   yOffset: 0.4
   arrowPrefab: {fileID: 4585105574326176547, guid: 095a3a7777b99ba468f295aec6d8e3c5, type: 3}
+  parent: Archer
+  weaponRotation: 45
 --- !u!114 &2068105476156814407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,7 +948,7 @@ Transform:
   m_GameObject: {fileID: 5425649814202783257}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.666667}
+  m_LocalPosition: {x: -0.039351463, y: -1.9376118, z: -6.666667}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children:

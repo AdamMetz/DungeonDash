@@ -8,6 +8,10 @@ public class Weapon : MonoBehaviour
     public float yOffset = 0.4f; // Offset the center of rotation down
     public GameObject arrowPrefab;
 
+    public string parent;
+
+    public float weaponRotation = 45f;
+
     private bool canAttack = true;
     private float attackCooldown = 1f;
     private int weaponDamage = 10;
@@ -27,16 +31,15 @@ public class Weapon : MonoBehaviour
     {
         if (canAttack)
         {
-            // Fire from the bottom right of the sprite (Bottom right of the bow)
-            Vector3 offset = transform.rotation *
-                new Vector3(
-                    transform.localScale.x / 2f, // Move halfway to the right
-                    -transform.localScale.y / 2f, // Move halfway down
-                    0f
-                );
+            // Get the direction from the player to the cursor
+            Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 direction = cursorPosition - transform.parent.position;
 
-            GameObject projectile = Instantiate(arrowPrefab, transform.position + offset, transform.rotation * Quaternion.Euler(0f, 0f, 180f));
-            projectile.GetComponent<Projectile>().parent = "Player";
+            // Calculate the angle in radians
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            GameObject projectile = Instantiate(arrowPrefab, transform.position, Quaternion.Euler(0f, 0f, angle));
+            projectile.GetComponent<Projectile>().parent = parent;
             projectile.GetComponent<Projectile>().damage = weaponDamage;
 
             canAttack = false;
@@ -67,7 +70,7 @@ public class Weapon : MonoBehaviour
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
             // Apply a flat 45 degree rotation to the bow itself, since the icon sprites are angled 45 degrees.
-            transform.localRotation *= Quaternion.Euler(0f, 0, 45f);
+            transform.localRotation *= Quaternion.Euler(0f, 0, weaponRotation);
         }
     }
 

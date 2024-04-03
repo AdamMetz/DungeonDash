@@ -35,7 +35,7 @@ public class CharacterHealth : MonoBehaviour
 
         // Only deal damage when the player is either being hit or hitting someone
         // This prevents friendly fire between enemies
-        if (projectileSourceName == "Player" || gameObject.tag == "Player")
+        if (projectileSourceName == "Archer" || projectileSourceName == "Mage" || gameObject.tag == "Player")
         {
             if (gameObject.tag == "Player")
             {
