@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  damage: 10
+  damage: 15
   rb: {fileID: 0}
   parent: Mage
   rotationOffsetx: 0

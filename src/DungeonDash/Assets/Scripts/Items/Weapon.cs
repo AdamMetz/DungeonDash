@@ -14,7 +14,7 @@ public class Weapon : MonoBehaviour
 
     private bool canAttack = true;
     private float attackCooldown = 1f;
-    private int weaponDamage = 10;
+    public int weaponDamage = 10;
 
     void Update()
     {

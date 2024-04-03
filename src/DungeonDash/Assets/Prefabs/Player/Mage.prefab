@@ -397,7 +397,7 @@ Transform:
   m_GameObject: {fileID: 1803593710614108212}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.7700002, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -689,7 +689,8 @@ MonoBehaviour:
   yOffset: 0.4
   arrowPrefab: {fileID: 6961675157554705391, guid: 24e0b31e151161946b76d131c13aeebb, type: 3}
   parent: Mage
-  weaponRotation: 174
+  weaponRotation: 45
+  weaponDamage: 15
 --- !u!114 &2068105476156814407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,7 +962,7 @@ Transform:
   m_GameObject: {fileID: 5425649814202783257}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.8466668, z: -6.666667}
+  m_LocalPosition: {x: 0, y: 0, z: -6.666667}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children:

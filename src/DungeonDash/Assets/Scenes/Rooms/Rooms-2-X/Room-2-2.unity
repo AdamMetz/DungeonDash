@@ -9351,7 +9351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2961e0b0c05e3d4ab6d158e8786df00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 670943390377605691, guid: b11c774a94c9b144c952e0dc0aad38ce, type: 3}
+  bowPrefab: {fileID: 670943390377605691, guid: b11c774a94c9b144c952e0dc0aad38ce, type: 3}
+  staffPrefab: {fileID: 723925133758439567, guid: d55d3e16f19b53a4d9caa6471baf7639, type: 3}
   healthPotionPrefab: {fileID: 0}
 --- !u!1 &1783198864
 GameObject:

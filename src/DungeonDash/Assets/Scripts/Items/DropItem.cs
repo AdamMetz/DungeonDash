@@ -2,14 +2,27 @@ using UnityEngine;
 
 public class DropItem : MonoBehaviour
 {
-    public GameObject weaponPrefab;
+    public GameObject bowPrefab;
+    public GameObject staffPrefab;
     public GameObject healthPotionPrefab;
 
+    private string playerClass = "";
+
+    private void GetPlayerClass() 
+    {
+        playerClass = GameObject.FindGameObjectWithTag("Player").gameObject.name;
+    }
     public void DropItemOnGround() 
     {
-        if (weaponPrefab != null)
+        GetPlayerClass();
+
+        if (bowPrefab != null && playerClass == "Archer")
         {
-            Instantiate(weaponPrefab, transform.position, Quaternion.identity);
+            Instantiate(bowPrefab, transform.position, Quaternion.identity);
+        }
+        else if (staffPrefab != null && playerClass == "Mage")
+        {
+            Instantiate(staffPrefab, transform.position, Quaternion.identity);
         }
         else if (healthPotionPrefab != null)
         {
