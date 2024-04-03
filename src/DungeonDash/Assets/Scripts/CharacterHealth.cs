@@ -124,7 +124,10 @@ public class CharacterHealth : MonoBehaviour
         Animator bossAnimator = GetComponent<Animator>();
         bossAnimator.SetTrigger("BossDefeated");
         yield return new WaitForSeconds(1);
-        Destroy(gameObject);
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        
         SceneManager.LoadSceneAsync(17, LoadSceneMode.Single);
+        Destroy(player);
     }
 }
