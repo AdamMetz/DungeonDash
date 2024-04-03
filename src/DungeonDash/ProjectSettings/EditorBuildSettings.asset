@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: a6d22409877e945a7ad442324de14134
+  - enabled: 1
+    path: Assets/Scenes/Rooms/StartRoomMage.unity
+    guid: 231e165f89bdba84d969ff7ac6f73fb8
   m_configObjects: {}

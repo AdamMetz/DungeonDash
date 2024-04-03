@@ -10,6 +10,6 @@ public class CharacterSelect : MonoBehaviour
 
     public void Mage()
     {
-        // SceneManager.LoadScene(20);
+        SceneManager.LoadScene(19);
     }
 }
