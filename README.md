@@ -23,6 +23,7 @@ Credits to:
 - [Pixel Art Effect - FX017 - Nyknck](https://nyknck.itch.io/pixelarteffectfx017) for fireball assets.
 - [Dungeon Music - Deep Crawler](https://crossedkiller.itch.io/dungeon-music) for background music assets.
 - [Pursuit (Dramatic Music) - Gaming Background Music](https://www.youtube.com/watch?v=NOc8yz985T4) for game over scene background music assets.
+- [Kevin MacLeod - 8bit Dungeon Level & Dungeon Boss](https://www.youtube.com/watch?v=In9xTpfjorU&list=PLwJjxqYuirCLkq42mGw4XKGQlpZSfxsYd&index=10) for dungeon room and boss level background music assets.
 - [Start Scene Background](https://www.artstation.com/artwork/QrYv8E) for start screen background image.
 - [ROYALTY FREE Epic Victory Music Royalty](https://www.youtube.com/watch?v=5JeU0pYk0dg) for victory background music assets.
 - [Hearts and health bar](https://fliflifly.itch.io/hearts-and-health-bar) for heart images.
