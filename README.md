@@ -14,6 +14,7 @@ The player can choose from three different classes for their adventure: [Read mo
 - [Project Idea](/Documents/README.md)
 - [Concept and Storyboard](/Documents/Dungeon%20Dash%20-%20Concept%20and%20Storyboard.pdf)
 - [Production and Post-Production](/Documents/Dungeon%20Dash%20-%20Production%20and%20Post-Production.pdf)
+- [Final Presentation](/Documents/Dungeon%20Dash%20-%20Final%20Presentations.pdf)
 
 
 ## Assets
