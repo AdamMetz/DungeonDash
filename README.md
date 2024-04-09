@@ -27,3 +27,4 @@ Credits to:
 - [Start Scene Background](https://www.artstation.com/artwork/QrYv8E) for start screen background image.
 - [ROYALTY FREE Epic Victory Music Royalty](https://www.youtube.com/watch?v=5JeU0pYk0dg) for victory background music assets.
 - [Hearts and health bar](https://fliflifly.itch.io/hearts-and-health-bar) for heart images.
+- [Pixel Keyboard Keys - for UI](https://dreammix.itch.io/keyboard-keys-for-ui) for tutorial keyboard key icons.
