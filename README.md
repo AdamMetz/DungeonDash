@@ -14,6 +14,7 @@ The player can choose from three different classes for their adventure: [Read mo
 - [Project Idea](/Documents/README.md)
 - [Concept and Storyboard](/Documents/Dungeon%20Dash%20-%20Concept%20and%20Storyboard.pdf)
 - [Production and Post-Production](/Documents/Dungeon%20Dash%20-%20Production%20and%20Post-Production.pdf)
+- [Final Presentation](/Documents/Dungeon%20Dash%20-%20Final%20Presentations.pdf)
 
 
 ## Assets
@@ -26,5 +27,5 @@ Credits to:
 - [Kevin MacLeod - 8bit Dungeon Level & Dungeon Boss](https://www.youtube.com/watch?v=In9xTpfjorU&list=PLwJjxqYuirCLkq42mGw4XKGQlpZSfxsYd&index=10) for dungeon room and boss level background music assets.
 - [Start Scene Background](https://www.artstation.com/artwork/QrYv8E) for start screen background image.
 - [ROYALTY FREE Epic Victory Music Royalty](https://www.youtube.com/watch?v=5JeU0pYk0dg) for victory background music assets.
-- [Hearts and health bar](https://fliflifly.itch.io/hearts-and-health-bar) for heart images.
+- [Hearts](https://fliflifly.itch.io/hearts-and-health-bar) for heart images.
 - [Pixel Keyboard Keys - for UI](https://dreammix.itch.io/keyboard-keys-for-ui) for tutorial keyboard key icons.
