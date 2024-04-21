@@ -1,5 +1,9 @@
 # CTCH 312 - Game Development Project
 
+<p align="center">
+  <img width="300" height="300" src="https://github.com/AdamMetz/DungeonDash/assets/36246244/68890b8e-0a5b-402d-9506-63a319f3519d">
+</p>
+
 ## Dungeon Dash
 “Dungeon Dash” is a single player 2D dungeon-crawler/roguelike adventure game, with a pixelated and medieval fantasy theme. The player embarks on a journey through a series of unique rooms within a dungeon, where their skills are put to the test as they are confronted by many monsters. 
 
